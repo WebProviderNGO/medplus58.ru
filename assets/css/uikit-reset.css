@@ -1,0 +1,46 @@
+.uk-navbar-nav>li>a {
+    color: var(--PrimaryColor);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.uk-navbar-nav>li:hover>a {
+    color: var(--PrimaryColor2);
+}
+
+.uk-dotnav>.uk-active>* {
+    background-color: var(--PrimaryColor);
+}
+
+.uk-dotnav>*>* {
+    border-color: var(--PrimaryColor);
+}
+
+.uk-dotnav>*> :hover {
+    background-color: var(--PrimaryColor);
+}
+
+.uk-button-default {
+    color: var(--PrimaryColor);
+    border: 1px solid var(--PrimaryColor);
+    border-radius: 5px;
+}
+
+.uk-button-default:hover {
+    color: var(--PrimaryColor2);
+    border-color: var(--PrimaryColor2);
+}
+
+.uk-button-primary {
+    background-color: var(--PrimaryColor);
+    color: #fff;
+    border-radius: 5px;
+}
+
+.uk-button-primary:hover {
+    background-color: var(--PrimaryColor2);
+  }
+
+.uk-section-primary:not(.uk-preserve-color) {
+    background-color: var(--PrimaryColor);
+}

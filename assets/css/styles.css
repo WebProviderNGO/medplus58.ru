@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700&display=swap');
+
+html {
+    --PrimaryColor: #00A69C;
+    --PrimaryColor2: #007a72;
+    --SecondaryColor: #0084FD;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-variant-numeric: lining-nums;
+}
+
+.uk-navbar-nav>li>a,
+h2,
+h3,
+.uk-heading-small {
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+.uk-link,
+a {
+    color: var(--SecondaryColor);
+}
+
+.uk-slideshow-items .uk-heading-small,
+.uk-slideshow-items .uk-text-lead,
+.uk-navbar-center .uk-text-lead,
+.HomeS1 h3,
+.uk-section-muted .uk-heading-small {
+    color: var(--PrimaryColor);
+}
+
+.uk-slideshow-items .uk-heading-small {
+    font-weight: 500;
+}
+
+.uk-section-default .uk-heading-small {
+    color: var(--PrimaryColor);
+}
+
+.HomeS1 .uk-icon {
+    color: var(--PrimaryColor);
+}
+
+.HomeS1 h3 {
+    font-weight: 700;
+}
+
+.HomeS1 a {
+    font-size: 24px;
+}
+
+.HomeS2 .uk-card-default .uk-card-title,
+.HomeS3 .uk-card-default .uk-card-title {
+    color: var(--PrimaryColor);
+    font-weight: 700;
+}
+
+.HomeS2 .uk-card-default {
+    color: rgba(0, 166, 155, 0.6);
+}
+
+.HomeS3 .uk-card-default .uk-card-footer {
+    border-top: none;
+    color: var(--SecondaryColor);
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.HomeS4 .uk-subnav>*> :first-child {
+    text-transform: none;
+    font-size: 1.5rem;
+}
+
+.uk-subnav>*>a:hover {
+    color: rgba(0, 131, 253, 0.8);
+}
+
+.uk-subnav>.uk-active>a {
+    color: var(--SecondaryColor);
+}
+
+.HomeS5-Block {
+    border: 1px solid var(--PrimaryColor);
+}
+
+.HomeS5_cena {
+    font-weight: 700;
+}
+
+.HomeS5 h3 {
+    color: var(--PrimaryColor);
+    font-weight: 500;
+}
+
+.HomeS6 .uk-card {
+    box-shadow: none;
+}
+
+.HomeS6 .uk-card-title {
+    color: var(--PrimaryColor);
+    font-weight: 500;
+}
+
+.HomeS6 .uk-card-body {
+    color: rgba(1, 83, 78, 0.7);
+}
+
+.HomeS6 .uk-icon-button {
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(0, 166, 155, 0.4);
+    border-radius: 500px;
+    background: transparent;
+    color: rgba(0, 166, 155, 0.4);
+}
+
+.uk-section-primary2 {
+    background-color: rgba(0, 166, 155, 0.2);
+}
+
+.HomeS7 .uk-heading-small,
+.HomeS7 .uk-card-default {
+    color: var(--PrimaryColor);
+}
+
+.HomeS7 .HomeS7-Comment_name {
+    color: var(--PrimaryColor);
+    font-weight: 700;
+}
+
+.HomeS7-Comment {
+    color: black;
+}
+
+.HomeS7 .uk-icon-button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 500px;
+    background: white;
+    color: rgba(0, 166, 155, 0.4);
+}
