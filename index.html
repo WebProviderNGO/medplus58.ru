@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <div uk-slideshow="max-height: 700; autoplay: true; autoplay-interval: 4000; animation: fade">
+    <header uk-slideshow="autoplay: true; autoplay-interval: 4000; animation: fade">
         <div class="uk-position-relative uk-visible-toggle" tabindex="-1">
             <ul class="uk-slideshow-items">
                 <li>
@@ -55,21 +55,38 @@
                             <a class="uk-navbar-item uk-logo" href="#"><img src="content/logo.png" width="100px"
                                     alt=""></a>
                         </div>
-                        <div class="uk-navbar-center">
+                        <div class="uk-navbar-center uk-visible@s">
                             <a class="uk-text-lead" href="#">8 800 000 00 00</a>
                             <a class="uk-display-block uk-button uk-button-primary">Записаться</a>
                         </div>
                         <div class="uk-navbar-right">
-                            <ul class="uk-navbar-nav">
+                            <ul class="uk-navbar-nav uk-visible@m">
                                 <li><a href="#">Мед+</a></li>
                                 <li><a href="#">Врачи</a></li>
                                 <li><a href="#">Услуги и цены</a></li>
                                 <li><a href="#">Контакты</a></li>
                             </ul>
+                            <button class="uk-navbar-toggle" uk-navbar-toggle-icon href="#" type="button"
+                                uk-toggle="target: #offcanvas-nav-primary"></button>
                         </div>
                     </div>
                 </div>
             </nav>
+        </div>
+    </header>
+    <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
+        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+            <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                <li><a href="#">Мед+</a></li>
+                <li><a href="#">Врачи</a></li>
+                <li><a href="#">Услуги и цены</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <div class="uk-text-center">
+                <a class="uk-text-lead" href="#">8 800 000 00 00</a>
+                <a class="uk-display-block uk-button uk-button-primary uk-margin-top">Записаться</a>
+            </div>
         </div>
     </div>
     <section class="HomeS1 uk-section-small uk-section-default">
@@ -105,7 +122,7 @@
     <section class="HomeS2 uk-section-large uk-section-primary">
         <div class="uk-container uk-container-large">
             <h2 class="uk-heading-small">Направления</h2>
-            <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
+            <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
                 <div>
                     <div class="uk-card uk-card-small uk-card-default uk-card-body">
                         <h3 class="uk-card-title uk-link-reset"><a href="">Гастроэнтерология</a></h3>
@@ -148,7 +165,7 @@
     <section class="HomeS3 uk-section uk-section-muted">
         <div class="uk-container uk-container-large">
             <h2 class="uk-heading-small">Услуги</h2>
-            <div class="uk-child-width-1-5@m uk-grid-large" uk-grid
+            <div class="uk-child-width-1-3@s uk-child-width-1-5@m uk-grid-large" uk-grid
                 uk-height-match="target: > div > .uk-card > .uk-card-title">
                 <div>
                     <div class="uk-card uk-card-small uk-card-default uk-card-body">
@@ -196,7 +213,7 @@
     <section class="HomeS4 uk-section-large uk-section-default">
         <div class="uk-container uk-container-large">
             <h2 class="uk-heading-small">О клинике</h2>
-            <div class="uk-child-width-1-2" uk-grid>
+            <div class="uk-child-width-1-2@m" uk-grid>
                 <div><img src="content/home.jpg" alt=""></div>
                 <div>
                     <div class="uk-panel">
@@ -245,7 +262,7 @@
     <section class="HomeS5 uk-section-small uk-section-muted">
         <div class="uk-container uk-container-large">
             <h2 class="uk-heading-small">Почему выбирают Мед+?</h2>
-            <div class="uk-grid-large uk-child-width-1-3 uk-flex-center" uk-grid
+            <div class="uk-grid-large uk-child-width-1-2@s uk-child-width-1-3@m uk-flex-center" uk-grid
                 uk-height-match="target: > div > .HomeS5-Block">
                 <div>
                     <div class="HomeS5-Block uk-padding">
@@ -294,16 +311,17 @@
     <section class="HomeS6 uk-section-large uk-section-default">
         <div class="uk-container uk-container-large">
             <div class="uk-grid-large" uk-grid>
-                <div class="uk-width-auto">
-                    <h2 class="uk-heading-small">Наши<br>специалисты</h2>
-                    <a class="uk-icon-button uk-margin-right" href uk-slidenav-previous uk-slider-item="previous"></a>
-                    <a class="uk-icon-button" href uk-slidenav-next uk-slider-item="next"></a>
+                <div class="uk-width-1-4@m">
+                    <h2 class="uk-heading-small">Наши специалисты</h2>
+                    <div class="uk-visible@s">
+                        <a class="uk-icon-button uk-margin-right" href uk-slidenav-previous
+                            uk-slider-item="previous"></a>
+                        <a class="uk-icon-button" href uk-slidenav-next uk-slider-item="next"></a>
+                    </div>
                 </div>
                 <div class="uk-width-expand">
                     <div class="uk-slider-container-offset" uk-slider>
-
                         <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
-
                             <ul class="uk-slider-items uk-child-width-1-3@s uk-grid">
                                 <li>
                                     <a class="uk-card uk-card-default uk-link-reset">
@@ -355,6 +373,7 @@
                                 </li>
                             </ul>
                         </div>
+                        <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin uk-hidden@s"></ul>
                     </div>
                 </div>
             </div>
@@ -366,7 +385,7 @@
                 <div class="uk-width-expand">
                     <h2 class="uk-heading-small uk-margin-bottom">Отзывы пациентов</h2>
                 </div>
-                <div>
+                <div class="uk-visible@s">
                     <a class="uk-icon-button uk-margin-right" href uk-slidenav-previous uk-slider-item="previous"></a>
                     <a class="uk-icon-button" href uk-slidenav-next uk-slider-item="next"></a>
                 </div>
@@ -385,7 +404,7 @@
                                     науке функционально разнесены на независимые элементы.
                                 </div>
                             </div>
-                            <div class="HomeS7-Comment uk-child-width-auto uk-grid-large uk-flex-middle uk-margin-top"
+                            <div class="HomeS7-Comment uk-child-width-auto@m uk-grid-row-small uk-grid-column-large uk-flex-middle uk-margin-top"
                                 uk-grid>
                                 <div class="HomeS7-Comment_name">Имя</div>
                                 <div><b>Жалоба: </b>Lorem ipsum dolor</div>
@@ -406,7 +425,7 @@
                                     науке функционально разнесены на независимые элементы.
                                 </div>
                             </div>
-                            <div class="HomeS7-Comment uk-child-width-auto uk-grid-large uk-flex-middle uk-margin-top"
+                            <div class="HomeS7-Comment uk-child-width-auto@m uk-grid-row-small uk-grid-column-large uk-flex-middle uk-margin-top"
                                 uk-grid>
                                 <div class="HomeS7-Comment_name">Имя</div>
                                 <div><b>Жалоба: </b>Lorem ipsum dolor</div>
@@ -427,7 +446,7 @@
                                     науке функционально разнесены на независимые элементы.
                                 </div>
                             </div>
-                            <div class="HomeS7-Comment uk-child-width-auto uk-grid-large uk-flex-middle uk-margin-top"
+                            <div class="HomeS7-Comment uk-child-width-auto@m uk-grid-row-small uk-grid-column-large uk-flex-middle uk-margin-top"
                                 uk-grid>
                                 <div class="HomeS7-Comment_name">Имя</div>
                                 <div><b>Жалоба: </b>Lorem ipsum dolor</div>
@@ -439,15 +458,16 @@
                         </li>
                     </ul>
                 </div>
+                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin uk-hidden@s"></ul>
             </div>
         </div>
     </section>
     <div class="uk-grid-collapse uk-grid-match" uk-grid>
-        <div class="uk-width-expand">
+        <div class="uk-width-expand@s">
             <script type="text/javascript" charset="utf-8" async
                 src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8a417d1bba89fa9d13688b015821ba8b949d02cced69138ce3c8156bc7c5dff9&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
         </div>
-        <div>
+        <div class="uk-width-auto@s">
             <div class="uk-section-primary uk-padding-large">
                 <div>
                     <h3 class="uk-margin-remove">ул. Антонова, 21А</h3>
@@ -466,8 +486,8 @@
     </div>
     <footer class="uk-padding-large uk-padding-remove-horizontal">
         <div class="uk-container uk-container-large">
-            <div class="uk-child-width-1-4" uk-grid>
-                <div><img src="content/logo.png" width="100px" alt=""></div>
+            <div class="uk-child-width-1-2 uk-child-width-1-4@s" uk-grid>
+                <div class="uk-visible@s"><img src="content/logo.png" width="100px" alt=""></div>
                 <div>
                     <ul class="uk-nav-default" uk-nav>
                         <li><a href="#">О клинике</a></li>
@@ -483,7 +503,7 @@
                         <li><a href="#">Фотогалерея</a></li>
                     </ul>
                 </div>
-                <div class="uk-panel">
+                <div class="uk-width-1-1 uk-width-1-4@s uk-panel">
                     <p>ООО «Поликлиника №8»</p>
                     <p>Лицензия на осуществление деятельности №ЛО 041-01166-58/00326715
                         от 29.08.2018г.</p>

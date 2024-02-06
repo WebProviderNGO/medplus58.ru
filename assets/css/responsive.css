@@ -1,6 +1,16 @@
-@media (min-width:300px) {}
+@media (min-width:300px) {
+    header .uk-slideshow-items {
+        aspect-ratio: 16 / 9;
+        height: 100vh;
+    }
+}
 
-@media (min-width:640px) {}
+@media (min-width:640px) {
+    header .uk-slideshow-items {
+        aspect-ratio: 16 / 9;
+        max-height: 700px;
+    }
+}
 
 @media (min-width:960px) {}
 

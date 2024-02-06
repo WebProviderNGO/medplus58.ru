@@ -39,8 +39,16 @@
 
 .uk-button-primary:hover {
     background-color: var(--PrimaryColor2);
-  }
+}
 
 .uk-section-primary:not(.uk-preserve-color) {
     background-color: var(--PrimaryColor);
+}
+
+.uk-navbar-toggle {
+    color: var(--PrimaryColor);
+}
+
+.uk-offcanvas-bar {
+    background: var(--PrimaryColor2);
 }
