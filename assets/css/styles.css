@@ -11,7 +11,8 @@ html {
 .uk-navbar-nav>li>a,
 h2,
 h3,
-.uk-heading-small {
+.uk-heading-small,
+h4 {
     font-family: 'Alegreya Sans', sans-serif;
 }
 
@@ -113,7 +114,8 @@ a {
     color: rgba(0, 166, 155, 0.4);
 }
 
-.uk-section-primary2 {
+.uk-section-primary2,
+.uk-background-primary2 {
     background-color: rgba(0, 166, 155, 0.2);
 }
 
@@ -138,4 +140,33 @@ a {
     border-radius: 500px;
     background: white;
     color: rgba(0, 166, 155, 0.4);
+}
+
+.PageVR-I {
+    color: var(--PrimaryColor2);
+}
+
+.PageVR-I h4 {
+    color: var(--PrimaryColor2);
+    font-weight: 700;
+}
+
+.PageVR-I hr {
+    border-top: 1px solid rgba(0, 122, 114, 0.1);
+}
+
+.PageVR-I-Zap,
+.PageVR-I-Zap h3 {
+    color: white;
+}
+
+.PageVR-I-Zap .uk-button-default {
+    color: white;
+    border: 1px solid white;
+    border-radius: 0;
+}
+
+.PageVR-I-Zap .uk-button-default:hover {
+    color: rgba(255, 255, 255, 0.7);
+    border-color: rgba(255, 255, 255, 0.7);
 }

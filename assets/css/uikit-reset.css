@@ -41,7 +41,8 @@
     background-color: var(--PrimaryColor2);
 }
 
-.uk-section-primary:not(.uk-preserve-color) {
+.uk-section-primary:not(.uk-preserve-color),
+.uk-background-primary {
     background-color: var(--PrimaryColor);
 }
 
